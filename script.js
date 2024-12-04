@@ -28,15 +28,18 @@
  let body = document.querySelector("body")
  let clock = document.querySelector(".clock")
  let number = document.querySelector(".number")
+ let center = document.querySelector(".center-point")
  let flag =0;
  dark.addEventListener("click",function(){
    if(flag ==0){
     body.style.backgroundColor = "black";
+   
     clock.style.backgroundColor ="white";
     clock.style.border= "8px solid grey"
     number.style.color = "black"
     flag=1;
    }else{
+     center.style.backgroundColor = "black"
     body.style.backgroundColor = "white";
     clock.style.backgroundColor ="grey";
     clock.style.border= "8px solid black"
